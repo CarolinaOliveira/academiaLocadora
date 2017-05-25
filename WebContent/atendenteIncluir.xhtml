@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:form>
+	<h:panelGrid>
+	
+		<h:outputLabel value="ID" />
+		<h:inputText id="id" value="#{clienteMB.atendente.idAt}" />
+
+		<h:outputLabel value="Nome" />
+		<h:inputText id="nome" value="#{clienteMB.atendente.nomeAt}" />
+
+		<h:outputLabel value="CPF" />
+		<h:inputText id="cpf" value="#{clienteMB.atendente.cpfAt}" />
+
+		<h:commandButton id="btnSalvar" action="#{clienteMB.salvar}"
+			value="Salvar" />
+			
+			<h:commandButton id="btnListar" action="#{clienteMB.listar}"
+			value="Listar" />
+			
+	</h:panelGrid>
+
+</h:form>
+
+</html>

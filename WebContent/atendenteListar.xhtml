@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:form>
+	<h:panelGrid>
+
+		<h:dataTable value="#{clienteMB.listaAtendente}" var="atend">
+			<f:facet name="header">
+				<h:outputText value="Nome" />
+			</f:facet>
+			<h:column>
+				<h:outputText value="#{atend.nomeAt}" />
+			</h:column>
+
+		</h:dataTable>
+
+		<h:commandButton id="btnVoltar"
+			action="#{clienteMB.telaIncluirAtendente}" value="Voltar" />
+
+	</h:panelGrid>
+
+</h:form>
+
+</html>
